@@ -24,7 +24,7 @@ require: newSessionOnStart/newSession.sc
 theme: /
 
     state: Welcome
-        a: Начнём!
+        a: Начнём2!
 
     state: WorkHours
         intent!: /WorkHours
