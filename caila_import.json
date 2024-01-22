@@ -1,9 +1,8 @@
 {
-  "branch": "master",
   "project" : {
-    "id" : "test-1000001-aXd",
-    "name" : "test-1000001-aXd",
-    "folder" : "/jaicp"
+    "id" : "remote-1000001-MjK",
+    "name" : "remote-1000001-MjK",
+    "folder" : "/platform"
   },
   "settings" : {
     "language" : "ru",
@@ -13,10 +12,15 @@
     "extendedSettings" : {
       "useShared" : false
     },
-    "shared" : false
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : false,
+      "answerValidationEnabled" : false,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
   },
   "intents" : [ {
-    "id" : 1598,
     "path" : "/CardPayment",
     "answer" : "Оплатить у нас можно как по карте, так и наличными.",
     "enabled" : true,
@@ -30,10 +34,12 @@
     }, {
       "text" : "а вы безнал принимаете?"
     } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "id" : 1599,
     "path" : "/Location",
     "enabled" : true,
     "shared" : false,
@@ -44,10 +50,12 @@
     }, {
       "text" : "где вы находитесь"
     } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "id" : 1600,
     "path" : "/ScheduleAppointment",
     "answer" : "Вы можете назначить встречу завтра, в 18:00.",
     "enabled" : true,
@@ -61,10 +69,12 @@
     }, {
       "text" : "а можно назначить встречу на время?"
     } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "id" : 1601,
     "path" : "/WorkHours",
     "enabled" : true,
     "shared" : false,
@@ -73,6 +83,9 @@
     }, {
       "text" : "до скольки вы работаете?"
     } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
     "patterns" : [ ],
     "priority" : 0
   } ],
@@ -181,5 +194,7 @@
   }, {
     "name" : "zb.number",
     "enabled" : false
-  } ]
+  } ],
+  "faq" : [ ],
+  "skills" : [ ]
 }
